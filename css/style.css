@@ -117,6 +117,12 @@ a {
   font-size: 12px;
   margin-top: 50px;
   letter-spacing: 2px;
+  text-align: center;
+  flex-direction: column;
+}
+#footer > p a {
+  color: #fff;
+  font-weight: 900;
 }
 
 #main {
