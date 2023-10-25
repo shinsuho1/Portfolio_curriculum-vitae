@@ -6,7 +6,6 @@ let posArr = []
 for (let el of sections) {
     posArr.push(el.offsetTop);
 }
-console.log(posArr);
 
 window.addEventListener("scroll", scrollMenu);
 
