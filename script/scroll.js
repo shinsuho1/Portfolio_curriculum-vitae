@@ -1,6 +1,6 @@
 const sections = document.querySelectorAll("section");
 const tabs = document.querySelectorAll("#header>.inner>ul>li");
-console.log(tabs);
+const projectBtn = document.querySelector(".projectBtn");
 let posArr = []
 
 for (let el of sections) {
@@ -25,4 +25,10 @@ tabs.forEach((el, index) => {
             left: 0, top: posArr[index] - 80, behavior: "smooth"
         })
     });
+});
+
+projectBtn.addEventListener("click", () => {
+    window.scrollTo({
+        left: 0, top: posArr[2] - 80, behavior: "smooth"
+    })
 });
